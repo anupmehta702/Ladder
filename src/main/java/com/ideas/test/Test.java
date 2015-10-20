@@ -41,7 +41,6 @@ public class Test {
 	    	System.out.println("Enter first player's name ::");
 	    	String nameOfPlayer=scanner.next();
 	 		Player player=new Player(nameOfPlayer);
-	 		//playerList.add(player);
 	 		playerTurn.registerPlayerForItsTurn(player);
 	     }
 	     System.out.println("Press Y to start the game ::");

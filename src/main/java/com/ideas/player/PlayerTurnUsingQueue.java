@@ -18,15 +18,18 @@ public class PlayerTurnUsingQueue {
 	public static boolean isThereAWinner() {
 		return isThereAWinner;
 	}
-	/*public int initializeSequenceNumber() {
-		return sequenceNumber++;
-		
-	}*/
+	
 	public static  PlayerTurnUsingQueue getInstance(){
 		return INSTANCE;
 	}
 	private PlayerTurnUsingQueue()
 	{
+	}
+	
+	public void addAndQueueNewPlayer(String name)
+	{
+		Player p = new Player(name);
+		registerPlayerForItsTurn(p);
 	}
 	
 	public void registerPlayerForItsTurn(Player p)
