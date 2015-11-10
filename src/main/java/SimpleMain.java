@@ -10,8 +10,6 @@ public class SimpleMain {
 		
 		Scanner scanner = new Scanner(new InputStreamReader(System.in));
 		enterSpecialSquareDetails(scanner);
-		
-		System.out.println("Roll the dice with number (Press 0 to exit )::");
 		SimplePlayer player=enterPlayerDetails(scanner);
 		rollDice(scanner, player);
 		scanner.close();
@@ -41,6 +39,7 @@ public class SimpleMain {
 	
 	public static void rollDice(Scanner scanner,SimplePlayer player)
 	{
+		System.out.println("Roll the dice with number (Press 0 to exit )::");
 		while(true)
 		{
 			int rolledDice=scanner.nextInt();
