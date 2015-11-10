@@ -26,6 +26,7 @@ public class PlayerTurnUsingQueue {
 	{
 	}
 	
+	//Use below method to make players strictly adher to queueing(player turn) mechanism (turn wise)
 	public void addAndQueueNewPlayer(String name)
 	{
 		Player p = new Player(name);
@@ -44,6 +45,7 @@ public class PlayerTurnUsingQueue {
 		registerPlayerForItsTurn(p);
 	}
 	
+	//Players roll dice turn wise
 	public void playUsersTurnWise()
 	{
 		while(!playerQueue.isEmpty() && !PlayerTurnUsingQueue.isThereAWinner){
